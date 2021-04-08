@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="light.css" id="theme" />
+  <script src="script.js" sync defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+        <input type="button" value="AC" onclick="clearScreen()" class="clear" />
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="Screen(1)" id="one" />
+        <input type="button" value="2" onclick="Screen(2)" id="two" />
+        <input type="button" value="3" id="three" onclick="Screen(3)" />
+        <input type="button" value="+" onclick="Screen('+')" />
+      </div>
+      <div class="row">
+        <input type="button" value="4" id="four" onclick="Screen(4)" />
+        <input type="button" value="5" id="five" onclick="Screen(5)" />
+        <input type="button" value="6" id="six" onclick="Screen(6)" />
+        <input type="button" value="-" onclick="Screen('-')" />
+      </div>
+      <div class="row">
+        <input type="button" value="7" id="seven" onclick="Screen(7)" />
+        <input type="button" value="8" id="eight" onclick="Screen(8)" />
+        <input type="button" value="9" id="nine" onclick="Screen(9)" />
+        <input type="button" value="x" onclick="Screen('*')" />
+      </div>
+      <div class="row">
+        <input type="button" value="/" onclick="Screen('/')" />
+
+        <input type="button" value="0" id="zero" onclick="Screen(0)" />
+        <input type="button" value="." class="dot" onclick="Screen('.')" />
+        <input type="button" value="=" onclick="result.value = eval(result.value)" />
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
